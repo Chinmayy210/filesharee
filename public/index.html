@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Sharing Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>File Sharing Website</h1>
+        <input type="file" id="fileInput">
+        <button onclick="uploadFile()">Upload File</button>
+        <table id="fileTable">
+            <thead>
+                <tr>
+                    <th>Filename</th>
+                    <th>Size</th>
+                    <th>Shareable link</th>
+                </tr>
+            </thead>
+            <tbody id="fileList">
+                <!-- File list will be populated here -->
+            </tbody>
+        </table>
+    </div>
+    <!-- Modal HTML structure -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="shareLink"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
